@@ -18,7 +18,11 @@ export const HotItem = () => {
               effect="cards"
               grabCursor={true}
               modules={[EffectCards]}
-              className="mySwiper w-[790px]"
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              className="mySwiper w-[900px]"
             >
               {[...new Array(10)].map((item, i) => (
                 <SwiperSlide key={i}>
@@ -54,7 +58,7 @@ export const HotItem = () => {
             </div>
           </div>
         </div>
-        <div className="h-[732px]">
+        <div className="h-[770px]">
           <Swiper
             direction="vertical"
             slidesPerView={1}
