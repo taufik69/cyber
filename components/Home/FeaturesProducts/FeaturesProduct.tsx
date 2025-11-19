@@ -1,5 +1,14 @@
-import React from "react";
+import { Container } from "@/components/commoncomponents/Container";
+import Tabs from "./Tabs";
 
 export const FeaturesProduct = () => {
-  return <div>FeaturesProduct</div>;
+  return (
+    <div className="py-20">
+      <Container>
+        <div>
+          <Tabs />
+        </div>
+      </Container>
+    </div>
+  );
 };

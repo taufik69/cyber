@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sfPro.className}`}>{children}</body>
+      <body className={sfPro.className}>{children}</body>
     </html>
   );
 }

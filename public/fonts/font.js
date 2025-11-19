@@ -15,5 +15,6 @@ export const sfPro = localFont({
       weight: "500",
     },
   ],
+  display: "swap",
   variable: "--sfpro",
 });
