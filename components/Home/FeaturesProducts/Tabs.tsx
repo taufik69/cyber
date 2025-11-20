@@ -9,12 +9,13 @@ export default function Tabs() {
   return (
     <div>
       {/* TAB BUTTONS */}
-      <ul className="flex border-b border-gray-200">
+      <ul className="flex border-b border-gray-200 ">
         <li>
           <button
             onClick={() => setActive("smartphones")}
-            className={`p-4 ${
-              active === "smartphones" && "bg-neutral-secondary-soft"
+            className={`p-4  cursor-pointer  uppercase ${
+              active === "smartphones" &&
+              "bg-secondary_charcoal text-main_white "
             }`}
           >
             smartphones
@@ -24,8 +25,8 @@ export default function Tabs() {
         <li>
           <button
             onClick={() => setActive("tablets")}
-            className={`p-4 ${
-              active === "tablets" && "bg-neutral-secondary-soft"
+            className={`p-4  uppercase cursor-pointer ${
+              active === "tablets" && "bg-secondary_charcoal text-main_white"
             }`}
           >
             tablets
@@ -35,8 +36,9 @@ export default function Tabs() {
         <li>
           <button
             onClick={() => setActive("mobile-accessories")}
-            className={`p-4 ${
-              active === "mobile-accessories" && "bg-neutral-secondary-soft"
+            className={`p-4 cursor-pointer uppercase ${
+              active === "mobile-accessories" &&
+              "bg-secondary_charcoal text-main_white "
             }`}
           >
             mobile-accessories

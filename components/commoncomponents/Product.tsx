@@ -16,19 +16,21 @@ export const ProductBox = ({
       {productsItem?.slice(0, 8).map((item) => (
         <div
           key={item.id}
-          className="flex flex-col p-4 bg-[#F6F6F6]  gap-y-2  items-center px-10 py-6 rounded-md"
+          className="flex flex-col  bg-[#F6F6F6]  gap-y-2  items-center px-5 py-6 rounded-md"
         >
-          <div className="self-end text-red-600">
+          <div className="self-end text-black cursor-pointer">
             <FaHeart size={24} />
           </div>
           <Image
             src={item.images[0]}
-            width={160}
-            height={160}
+            width={200}
+            height={200}
             alt="product"
-            className="w-full object-cover"
+            className=" object-cover"
           />
-          <h2 className="text-lg font-bold">{item.title}</h2>
+          <h2 className="text-[16px] font-medium text-main_black">
+            {item.title}
+          </h2>
           <p className="text-sm text-gray-700">From ${item.price}</p>
           <Button className="mt-2 px-16 py-2 cursor-pointer bg-main_black text-main_white text-center rounded">
             Buy Now
