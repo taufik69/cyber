@@ -3,6 +3,7 @@ import { BrowseCategory } from "@/components/Home/BrowseCategory/BrowseCategory"
 import { Categories } from "@/components/Home/Categories/Categories";
 import { FeaturesProduct } from "@/components/Home/FeaturesProducts/FeaturesProduct";
 import Header from "@/components/Home/Header/Header";
+import { HotBanner } from "@/components/Home/HotBanner/HotBanner";
 import { HotItem } from "@/components/Home/HotItem/HotItem";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <HotItem />
       <BrowseCategory />
       <FeaturesProduct />
+      <HotBanner />
     </div>
   );
 }

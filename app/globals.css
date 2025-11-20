@@ -1,20 +1,28 @@
 @import "tailwindcss";
 
-
 :root {
   --main_black: #000000;
   --main_white: #ffffff;
-  --secondary_charcoal: #2E2E2E;
- 
+  --secondary_charcoal: #2e2e2e;
 }
 
 @theme {
-  --color-main_black: var(--main_black); 
+  --color-main_black: var(--main_black);
   --color-main_white: var(--main_white);
   --color-secondary_charcoal: var(--secondary_charcoal);
   /* font */
   --font-sfpro: var(--sfpro);
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
-
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
